@@ -1,0 +1,61 @@
+body{
+    overflow: hidden;
+    font-family: 'Goldman', cursive, sans-serif;
+}
+button{
+    font-family: 'Goldman', cursive, sans-serif;
+    border: none;
+}
+#wrap{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+#inner{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(to bottom, #ddd, #ccc);
+    padding: 0.5rem;
+    border: 0.5rem solid rgb(87, 87, 87);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.8);
+}
+h2{
+    text-align: center;
+    font-size: 3rem;
+}
+#timer{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+#timer > select{
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+}
+#count-time{
+    display: flex;
+    justify-content: center;
+    height: 1rem;
+    margin-bottom: 1rem;
+}
+#button-group{
+    display: flex;
+    justify-content: center;
+}
+#button-group > button{
+    margin: 0 0.5rem;
+    padding: 0.3rem 1rem;
+}
+#button-group > button:nth-child(1){
+    background: yellowgreen;
+}
+#button-group > button:nth-child(2){
+    background: tomato;
+}
+#button-group > button:nth-child(3){
+    background: red;
+}
