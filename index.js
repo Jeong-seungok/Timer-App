@@ -71,8 +71,9 @@ startBtn.addEventListener('click',(e)=>{
         checkWork = false;
         // 시,분,초 모두 00이면 종료
         if(cHourEl.innerText === '00' && cMinEl.innerText === '00' && cSecEl.innerText === '00'){
-            alert('Time completed!!');
+            startOn = false;
             checkWork = true;
+            alert('Time completed!!');
             clearInterval(start);
         }
         // 분,초 00이면 시-1
